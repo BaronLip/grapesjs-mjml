@@ -110,8 +110,8 @@ export default (editor, opt = {}) => {
 
   bm.add('mj-hero', {
     label: editor.I18n.t('grapesjs-mjml.components.names.hero'),
-    content: `<mj-hero mode="fixed-height" height="469px" background-width="600px" background-height="469px" background-url="https://cloud.githubusercontent.com/assets/1830348/15354890/1442159a-1cf0-11e6-92b1-b861dadf1750.jpg" background-color="#2a3448" padding="100px 0px">
-      <mj-text padding="20px" color="#ffffff" font-family="Helvetica" align="center" font-size="45px" line-height="45px" font-weight="900">
+    content: `<mj-hero mode="fixed-height" height="469px" background-width="640px" background-height="469px" background-url="https://cloud.githubusercontent.com/assets/1830348/15354890/1442159a-1cf0-11e6-92b1-b861dadf1750.jpg">
+      <mj-text color="#ffffff" font-family="Helvetica" align="center" font-size="45px" line-height="45px" font-weight="900">
         GO TO SPACE
       </mj-text>
       <mj-button href="https://mjml.io/" align="center">
@@ -124,17 +124,17 @@ export default (editor, opt = {}) => {
 
   bm.add('mj-wrapper', {
     label: editor.I18n.t('grapesjs-mjml.components.names.wrapper'),
-    content: `<mj-wrapper border="1px solid #000000" padding="50px 30px">
-    <mj-section border-top="1px solid #aaaaaa" border-left="1px solid #aaaaaa" border-right="1px solid #aaaaaa" padding="20px">
+    content: `<mj-wrapper>
+    <mj-section>
       <mj-column>
         <mj-image padding="0" src="http://placehold.it/350x250/78c5d6/fff" />
       </mj-column>
     </mj-section>
-    <mj-section border-left="1px solid #aaaaaa" border-right="1px solid #aaaaaa" padding="20px" border-bottom="1px solid #aaaaaa">
-      <mj-column border="1px solid #dddddd">
-        <mj-text padding="20px"> First line of text </mj-text>
-        <mj-divider border-width="1px" border-style="dashed" border-color="lightgrey" padding="0 20px" />
-        <mj-text padding="20px"> Second line of text </mj-text>
+    <mj-section>
+      <mj-column>
+        <mj-text>
+        <mj-divider/>
+        <mj-text>
       </mj-column>
     </mj-section>
   </mj-wrapper>`,

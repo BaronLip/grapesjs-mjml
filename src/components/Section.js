@@ -14,7 +14,8 @@ export default (editor, { dc, coreMjmlModel, coreMjmlView }) => {
         draggable: '[data-gjs-type=mj-body], [data-gjs-type=mj-wrapper]',
         droppable: '[data-gjs-type=mj-column]',
         'style-default': {
-          'padding': '10px 0 10px 0',
+          'max-width': '640px',
+          'padding': '0px 0px 0px 0px',
           'text-align': 'center',
         },
         stylable: [
@@ -22,7 +23,7 @@ export default (editor, { dc, coreMjmlModel, coreMjmlView }) => {
           'padding', 'padding-top', 'padding-left', 'padding-right', 'padding-bottom',
           'background-color', 'background-url', 'background-repeat', 'background-size',
           'border-radius', 'border-top-left-radius', 'border-top-right-radius', 'border-bottom-left-radius', 'border-bottom-right-radius',
-          'border', 'border-width', 'border-style', 'border-color'
+          'border', 'border-width', 'border-style', 'border-color', 'max-width'
         ],
       },
     },

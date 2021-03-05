@@ -13,7 +13,14 @@ export default (editor, { dc, coreMjmlModel, coreMjmlView }) => {
         name: editor.I18n.t('grapesjs-mjml.components.names.wrapper'),
         draggable: '[data-gjs-type=mj-body]',
         droppable: '[data-gjs-type=mj-section]',
+        'style-default': {
+          'padding': '0px 0px 0px 0px',
+          'text-align': 'center',
+        },
       },
+      stylable: [
+        'padding', 'padding-top', 'padding-left', 'padding-right', 'padding-bottom',
+      ],
     },
 
     view: {
